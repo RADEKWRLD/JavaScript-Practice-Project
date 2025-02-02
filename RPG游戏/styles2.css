@@ -1,0 +1,96 @@
+* {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+body {
+    
+    background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+    background-size: cover; /* 使背景图像填充整个页面 */
+    background-repeat: no-repeat; /* 防止背景图像重复 */
+    background-attachment: fixed; /* 使背景图像固定 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 100vh; /* 使 body 高度为视口高度 */
+    margin: 0; /* 移除默认的 body 外边距 */
+}
+
+span{
+    font-weight: bold;
+}
+
+#controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+#text {
+    background-color: #252a34;
+    color: #ffffff;
+    padding: 10px;
+    
+}
+
+#game {
+    max-width: 500px;
+    max-height: 400px;
+    background-color: rgba(255, 255, 255, 0.2); /* 半透明背景 */
+    color: #ffffff;
+    margin:  0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    -webkit-backdrop-filter: blur(10px); /* 兼容 Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* 半透明边框 */
+}
+
+#controls, #stats {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #0a0a23;
+    padding: 5px;
+}
+
+#monsterStats {
+    display: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    color: #ffffff;
+    background-color: #ff2e63;
+}
+
+#stats {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    gap: 1rem; /* 添加间距 */
+}
+
+.stat {
+    padding-right: 10px;
+    display: block;
+    text-align: center; /* 使内容居中 */
+}
+
+button {
+    font-weight: bolder;
+    display: block;
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #feac32;
+    background-image: linear-gradient(to right, #ed4264 , #ffedbc );
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+#monsterName,#monsterHealth{
+    padding: 3px;
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    border-radius: 5px;
+}
